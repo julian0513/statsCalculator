@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ** Character encoding and viewport settings ** -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+
+    <!-- ** Document title and stylesheets ** -->
+    <title>Statistics Calculator</title> <!-- Page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the custom CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Link to Font Awesome for icons -->
+</head>
+
+
+
+<body>
+<!-- ** Main container for the calculator and steps UI ** -->
+<div class="container">
+    <!-- ** Calculator UI section ** -->
+    <div class="calculator-ui">
+        <h1><i class="fas fa-calculator"></i> Statistics Calculator</h1> <!-- Header with icon -->
+        <p class="welcome">Welcome! Use this calculator to perform various statistical calculations.</p> <!-- Welcome message -->
+
+
+
+        <!-- ** Dropdown for selecting calculations ** -->
+        <label for="calculation">Select Calculation:</label> <!-- Label for the select input -->
+        <select id="calculation"> <!-- Dropdown for calculations -->
+
+            <option value="mean">Mean</option> <!-- Mean option -->
+            <option value="median">Median</option> <!-- Median option -->
+            <option value="range">Range</option> <!-- Range option -->
+            <option value="standard-deviation">Standard Deviation</option> <!-- Standard deviation option -->
+            <option value="sample-variance">Sample Variance</option> <!-- Sample variance option -->
+
+        </select>
+
+
+
+        <!-- ** Input for entering numbers ** -->
+        <label for="numbers">Enter Numbers (comma-separated):</label> <!-- Label for the input field -->
+        <input type="text" id="numbers" placeholder="Example - 1, 2, 3, 4, 5"> <!-- Input for numbers -->
+
+
+        <!-- ** Calculate button ** -->
+        <button id="calculate"><i class="fas fa-calculator"></i> Calculate</button> <!-- Button to calculate -->
+
+
+        <!-- ** Result display area ** -->
+        <div id="result">
+            <!-- Updated to show result as "Result - Mean: (result value)" -->
+
+        </div>
+    </div>
+
+
+
+    <!-- ** Steps UI section ** -->
+    <div class="steps-ui">
+        <h1><i class="fas fa-pencil-alt"></i> Calculation Steps</h1> <!-- Header with icon -->
+        <div id="stepsDisplay">
+            <!-- Math steps will be displayed here -->
+        </div>
+    </div>
+</div>
+
+
+<!-- ** Link to external JavaScript file ** -->
+<script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+
+</html>

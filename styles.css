@@ -1,0 +1,157 @@
+/* ** General body styles ** */
+body {
+    font-family: 'Arial', sans-serif; /* Set font family */
+    background-color: #f4f4f4; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding */
+}
+
+
+/* ** Container for the main layout ** */
+.container {
+    max-width: 1200px; /* Increased max-width for side-by-side layout */
+    margin: auto; /* Center the container */
+    display: flex; /* Use flexbox for side-by-side layout */
+    background: white; /* Set background color */
+    padding: 30px; /* Add padding */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+
+
+/* ** Styles for calculator and steps UI sections ** */
+.calculator-ui, .steps-ui {
+    flex: 1; /* Allow both sections to take equal space */
+    margin: 0 20px; /* Space between the two sections */
+    text-align: center; /* Center align text within sections */
+}
+
+
+
+/* ** Header styles ** */
+h1 {
+    color: #333; /* Dark color for headers */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+
+
+/* ** Label styles ** */
+label {
+    display: block; /* Block display for labels */
+    margin: 15px 0 5px; /* Margin for spacing */
+    font-weight: bold; /* Bold text for labels */
+}
+
+
+
+/* ** Input and select styles ** */
+input[type="text"],
+select {
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Optional: set a maximum width for consistency */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 40px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 6px; /* Rounded corners */
+    transition: border 0.3s; /* Smooth border transition */
+}
+
+
+
+/* ** Input focus styles ** */
+input[type="text"]:focus,
+select:focus {
+    border-color: #28a745; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+
+
+/* ** Button styles ** */
+button {
+    width: 100%; /* Full width for buttons */
+    padding: 12px; /* Padding inside buttons */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    margin-bottom: 20px; /* Space below buttons */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+
+
+/* ** Button hover styles ** */
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+
+/* ** Welcome message styles ** */
+.welcome {
+    margin-bottom: 40px; /* We can adjust this value for more or less space */
+}
+
+
+
+/* ** Result display styles ** */
+.result {
+    margin-top: 20px; /* Space above results */
+    font-size: 1.4em; /* Larger font for results */
+    color: #333; /* Dark color for results */
+    background: #e7f5e9; /* Light green background */
+    padding: 10px; /* Padding inside results */
+    border: 1px solid #c3e6cb; /* Light green border */
+    border-radius: 4px; /* Rounded corners */
+    display: none; /* Hide initially */
+}
+
+
+
+/* ** Steps UI styles ** */
+.steps-ui {
+    border-left: 2px solid #28a745; /* Border to the left */
+    padding-left: 20px; /* Space from the border */
+}
+
+
+
+/* ** Steps heading styles ** */
+.steps-ui h2 {
+    color: #28a745; /* Match heading color to the theme */
+}
+
+
+
+/* ** Steps text styles ** */
+.steps-ui pre {
+    white-space: pre-wrap; /* Allows wrapping of text while preserving whitespace */
+    text-align: left; /* Left-align text for readability */
+    margin: 20px 0; /* Margin for spacing */
+    font-family: monospace; /* Use a monospace font for better alignment */
+    background: #f8f9fa; /* Light background for contrast */
+    padding: 10px; /* Padding for spacing around text */
+    border: 1px solid #ddd; /* Border for visual separation */
+    border-radius: 4px; /* Rounded corners for aesthetics */
+}
+
+
+
+/* ** Styles for steps container ** */
+.steps-ui div {
+    margin-top: 80px; /* Add spacing above the steps */
+    text-align: left; /* Align text to the left for better readability */
+    white-space: pre-wrap; /* Allows wrapping of text while preserving whitespace */
+}
+
+
+
+/* ** Styles for individual steps ** */
+.steps-ui div .step {
+    margin-bottom: 10px; /* Space between steps */
+}
