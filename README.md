@@ -11,13 +11,17 @@ Here are the code files that are necessary to run the code - https://drive.googl
 I also used Spring Boot framework in the backend to handle web connectivity, enabling the backend services to interact with the frontend by providing RESTful APIs
 
 
-- CODE STRUCTURE -
+CODE STRUCTURE:
 
-I separated all the calculation classes for each metric (Mean, median, range, sample variance, and standard deviation) into a Calculations package
+I organized the code into distinct packages and classes so it would be easier to change for updates:
 
-I also made a separate StepsGenerator class to centralize the derivations of the step explanations that are displayed on the right side of the UI after the user does a calculation
+Calculations Package: Each metric (Mean, Median, Range, Sample Variance, and Standard Deviation) has its dedicated calculation class within this package. This separation keeps the calculations organized and isolated from each other.
 
-Then the rest of the code are just the standard classes needed to properly function with Spring Boot framework
+StepsGenerator Class: This class centralizes the logic for generating step-by-step explanations of calculations, which are displayed on the right side of the UI. It keeps the derivations and explanations managed in one place.
+
+Spring Boot Classes: The remaining classes handle the core functionality needed to work with the Spring Boot framework, such as the controller, application setup, and configurations required for web connectivity.
+
+
 
 Enjoy :)
 
