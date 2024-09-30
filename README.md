@@ -25,6 +25,3 @@ Spring Boot Classes: The remaining classes handle the core functionality needed 
 
 Enjoy :)
 
-
-
-PS: The amount of errors I ran into made me rethink my life choices several times 
